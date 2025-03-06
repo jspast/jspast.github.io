@@ -1,6 +1,6 @@
-base_url = "https://127.0.0.1"
+base_url = "https://jspast.github.io"
 title = "jspast"
-description = "YOUR_SITE_DESCRIPTION"
+description = ""
 author = "jspast"
 
 theme = "tabi"
