@@ -1,0 +1,198 @@
+// Colors reference:
+// https://gitlab.gnome.org/Teams/Design/mockup-resources/-/blob/master/GNOME_UI.gpl
+
+// Colors
+$active-color: #3584e4 !default;
+$error-color: #e01b24 !default;
+$success-color: #33d17a !default;
+$warning-color: #e5a50a !default;
+
+// Light theme
+$text-color: #2e3436 !default;
+$pushed-color: #d8d8d8 !default;
+$button-color: #e6e6e6 !default;
+$border-color: #ebebeb !default;
+$background-color: #fbfbfb !default;
+$tiles-color: #ffffff !default;
+$link-text-color: #1c71d8 !default;
+
+// Dark theme
+$text-color-dark: #e5e5e5 !default;
+$handles-color-dark: #d2d2d2 !default;
+$entry-color-dark: #1e1e1e !default;
+$background-color-dark: #242424 !default;
+$tiles-color-dark: #303030 !default;
+$button-color-dark: #3a3a3a !default;
+$pushed-color-dark: #454545 !default;
+$border-color-dark: #4a4a4a !default;
+$link-text-color-dark: #99c1f1 !default;
+
+// This defines theme-specific variables.
+@mixin theme-variables($theme) {
+
+    --selection-color: #3584e480;
+    --scrollbar-color: #{$error-color};
+
+    @if $theme =='light' {
+        // Light theme colours.
+        --background-color: #{$background-color};
+        --bg-0: #{$background-color};
+        --bg-1: #{$border-color};
+        --bg-2: #{$tiles-color};
+        --bg-3: #{$button-color};
+        --divider-color: #{$border-color};
+	    --text-color: #{$text-color};
+	    --primary-color: #{$text-color};
+	    --pushed-color: #{$pushed-color};
+	    --hover-color: #{$text-color};
+    }
+    @else if $theme == 'dark' {
+        // Dark theme colours.
+        --background-color: #{$background-color-dark};
+        --bg-0: #{$background-color-dark};
+        --bg-1: #{$border-color-dark};
+        --bg-2: #{$tiles-color-dark};
+        --bg-3: #{$button-color-dark};
+        --divider-color: #{$border-color-dark};
+        --text-color: #{$text-color-dark};
+        --primary-color: #{$text-color-dark};
+        --pushed-color: #{$pushed-color-dark};
+        --hover-color: #{$text-color-dark};
+    }
+}
+
+// Apply light theme variables by default.
+:root {
+    @include theme-variables('light');
+}
+
+// Apply dark theme variables when dark theme is explicitly set.
+[data-theme='dark'] {
+    @include theme-variables('dark');
+}
+
+// Apply dark theme variables when user's system prefers dark mode
+// and the theme is not explicitly set to light.
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme='light']) {
+        @include theme-variables('dark');
+    }
+}
+
+// parts/_cards.scss
+
+.filter-controls {
+    .taxonomy-item {
+        a {
+            &:hover {
+                background: var(--pushed-color);
+            }
+
+            &.active {
+                background: var(--pushed-color);
+            }
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .card {
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        &:hover {
+            background-color: var(--pushed-color);
+        }
+
+        .card-image {
+            max-height: 160px;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: contain;
+        }
+    }
+}
+
+// parts/_code.scss
+
+pre {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+
+    code {
+        &::before {
+            background-color: var(--bg-2);
+        }
+    }
+}
+
+// parts/_misc.scss
+
+::-moz-selection {
+    background: var(--selection-color);
+}
+
+::selection {
+    background: var(--selection-color);
+}
+
+a:hover {
+    background-color: var(--pushed-color);
+    border-radius: 2rem;
+}
+
+a:not(.no-hover-padding):hover::before {
+    background-color: var(--pushed-color);
+    border-radius: 2rem;
+}
+
+// parts/_footer.scss
+
+.social {
+    &:hover {
+        & > img {
+            filter: invert(0);
+        }
+    }
+}
+
+@mixin dark-theme-social {
+    .social {
+        &:hover {
+            & > img {
+                filter: invert(1);
+            }
+        }
+
+        & > img {
+            filter: invert(1);
+        }
+    }
+}
+
+[data-theme="dark"] {
+    @include dark-theme-social;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+        @include dark-theme-social;
+    }
+}
+
+// parts/_search.scss
+
+#searchModal {
+    #results-container {
+        #results {
+            > div {
+                &[aria-selected="true"] {
+                    background-color: var(--pushed-color);
+                }
+            }
+        }
+    }
+}
