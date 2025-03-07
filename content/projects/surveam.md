@@ -1,10 +1,10 @@
 +++
 title = "Surveam"
-description = "Explore Steam Hardware & Software Survey data"
-weight = 3
+description = "Visualize Steam Survey data through time"
+weight = 1
 
 [taxonomies]
-tags = ["GTK", "Libadwaita", "Matplotlib", "Python"]
+tags = ["GTK", "Libadwaita", "Matplotlib", "Python", "pandas"]
 
 [extra]
 local_image = "img/projects/surveam.png"

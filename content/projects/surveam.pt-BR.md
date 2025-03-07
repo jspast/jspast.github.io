@@ -1,10 +1,10 @@
 +++
 title = "Surveam"
-description = "Explore os dados da Pesquisa de Hardware e Software do Steam"
-weight = 3
+description = "Visualize os dados da Pesquisa da Steam ao longo do tempo"
+weight = 1
 
 [taxonomies]
-tags = ["GTK", "Libadwaita", "Matplotlib", "Python"]
+tags = ["GTK", "Libadwaita", "Matplotlib", "Python", "pandas"]
 
 [extra]
 local_image = "img/projects/surveam.png"
