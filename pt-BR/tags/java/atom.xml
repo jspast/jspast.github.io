@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://jspast.github.io/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-BR">
+    <tabi:metadata xmlns:tabi="https://github.com/welpo/tabi">
+        <tabi:base_url>https:&#x2F;&#x2F;jspast.github.io</tabi:base_url>
+        <tabi:separator>
+            -
+        </tabi:separator>
+        <tabi:about_feeds>Isto é um feed web, também conhecido como feed Atom. Inscreva-se copiando o URL da barra de endereços para o seu leitor de notícias. Visite About Feeds para aprender mais e começar. É grátis.</tabi:about_feeds>
+        <tabi:visit_the_site>Visitar site</tabi:visit_the_site>
+        <tabi:recent_posts>Publicações recentes</tabi:recent_posts>
+        <tabi:last_updated_on>Atualizado em $DATE</tabi:last_updated_on>
+        <tabi:default_theme></tabi:default_theme>
+        <tabi:post_listing_date>date</tabi:post_listing_date>
+        <tabi:current_section>Java</tabi:current_section>
+    </tabi:metadata><link rel="extra-stylesheet" href="https://jspast.github.io/skins/adwaita.css?h=d5d70848818778c71b27" /><title>jspast - Java</title>
+    <link href="https://jspast.github.io/pt-BR/tags/java/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://jspast.github.io/pt-BR/tags/java/" rel="alternate" type="text/html"/>
+    <generator uri="https://www.getzola.org/">Zola</generator><id>https://jspast.github.io/pt-BR/tags/java/atom.xml</id>
+</feed>

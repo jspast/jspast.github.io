@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="https://jspast.github.io/feed_style.xsl" type="text/xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="pt-BR">
+    <tabi:metadata xmlns:tabi="https://github.com/welpo/tabi">
+        <tabi:base_url>https:&#x2F;&#x2F;jspast.github.io</tabi:base_url>
+        <tabi:separator>
+            -
+        </tabi:separator>
+        <tabi:about_feeds>Isto é um feed web, também conhecido como feed Atom. Inscreva-se copiando o URL da barra de endereços para o seu leitor de notícias. Visite About Feeds para aprender mais e começar. É grátis.</tabi:about_feeds>
+        <tabi:visit_the_site>Visitar site</tabi:visit_the_site>
+        <tabi:recent_posts>Publicações recentes</tabi:recent_posts>
+        <tabi:last_updated_on>Atualizado em $DATE</tabi:last_updated_on>
+        <tabi:default_theme></tabi:default_theme>
+        <tabi:post_listing_date>date</tabi:post_listing_date>
+        <tabi:current_section>demo</tabi:current_section>
+    </tabi:metadata><link rel="extra-stylesheet" href="https://jspast.github.io/skins/adwaita.css?h=d5d70848818778c71b27" /><title>jspast - demo</title>
+    <link href="https://jspast.github.io/pt-BR/tags/demo/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://jspast.github.io/pt-BR/tags/demo/" rel="alternate" type="text/html"/>
+    <generator uri="https://www.getzola.org/">Zola</generator><updated>2093-02-16T00:00:00+00:00</updated><id>https://jspast.github.io/pt-BR/tags/demo/atom.xml</id><entry xml:lang="pt-BR">
+        <title>Olá, Mundo!</title>
+        <published>2093-02-16T00:00:00+00:00</published>
+        <updated>2093-02-16T00:00:00+00:00</updated>
+        <author>
+            <name>jspast</name>
+        </author>
+        <link rel="alternate" href="https://jspast.github.io/pt-BR/blog/hello/" type="text/html"/>
+        <id>https://jspast.github.io/pt-BR/blog/hello/</id>
+        
+            <content type="html">&lt;p&gt;This is your first blog post! You can:&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Write in &lt;em&gt;Markdown&lt;&#x2F;em&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Add code blocks:&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;python&quot; class=&quot;language-python z-code&quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;z-source z-python&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-python&quot;&gt;&lt;span class=&quot;z-meta z-qualified-name z-python&quot;&gt;&lt;span class=&quot;z-variable z-function z-python&quot;&gt;&lt;span class=&quot;z-support z-function z-builtin z-python&quot;&gt;print&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-python&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-arguments z-begin z-python&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-python&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-python&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-python&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-string z-python&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-python&quot;&gt;Hello, World!&lt;span class=&quot;z-punctuation z-definition z-string z-end z-python&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-arguments z-end z-python&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;ul&gt;
+&lt;li&gt;Create &lt;a href=&quot;https:&#x2F;&#x2F;example.com&quot;&gt;links&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;Add images&lt;&#x2F;li&gt;
+&lt;li&gt;And much more!&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Check &lt;a href=&quot;https:&#x2F;&#x2F;welpo.github.io&#x2F;tabi&#x2F;&quot;&gt;tabi’s documentation&lt;&#x2F;a&gt; to learn about all features.&lt;&#x2F;p&gt;
+</content>
+        <summary type="html">My first post using the tabi theme.</summary>
+        </entry>
+</feed>
