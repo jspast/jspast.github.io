@@ -29,7 +29,7 @@ git submodule update --init --recursive
 ### Update submodules
 
 ```sh
-git submodule update  --recursive --remote
+git submodule update --recursive --remote
 ```
 
 ### Start the website locally

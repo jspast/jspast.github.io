@@ -18,11 +18,12 @@ title = "jspast"
 taxonomies = [{name = "tags", feed = true}]
 
 [markdown]
-highlight_code = true
 bottom_footnotes = true
-# To use a Zola built-in theme, CSP needs to allow unsafe-inline for style-src.
-highlight_theme = "css"
 smart_punctuation = true
+
+[markdown.highlighting]
+theme = "catppuccin-frappe"
+style = "class"
 
 [search]
 # Whether to include the title of the page/section in the index.
